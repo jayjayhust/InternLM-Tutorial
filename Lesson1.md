@@ -9,6 +9,11 @@
 - 数据：书生·万卷
   - 2TB
   - 覆盖多种模态与任务
+  - OpenDataLab数据开放平台：https://opendatalab.org.cn/
+- 大语言模型：InternLM
+  - InternLM-7B：开源
+  - InternLM-20B：开源
+  - InternLM-123B：非开源
 - 预训练：InternLM-Train
   - 并行训练，极致优化
   - 速度达到3600 tokens/sec/gpu
