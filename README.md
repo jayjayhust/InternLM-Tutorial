@@ -17,6 +17,8 @@
     - 第一次课程视频链接：https://www.bilibili.com/video/BV1Rc411b7ns/
     - 第一次课程只需要记笔记，没有作业。第一次课程(1月9日)和第二次课程(1月12日)到本周末(1月13日)截止，笔记记录在 知乎/CSDN/Github 或者任何你习惯记录的地方，将你的笔记链接填写到 Github https://github.com/InternLM/tutorial/discussions/137
   - 2. 轻松玩转书生·浦语大模型趣味 Demo：
+    - 第二次课程文档链接：https://github.com/InternLM/tutorial/blob/main/helloworld/hello_world.md
+    - 第二次课程视频链接：https://www.bilibili.com/video/BV1Ci4y1z72H/?vd_source=8ad94ef3c814de443eb606ab804c48d3
   - 3. 基于 InternLM 和 LangChain 搭建你的知识库：
   - 4. XTuner 大模型单卡低成本微调实战：
   - 5. LMDeploy 大模型量化部署实践：
