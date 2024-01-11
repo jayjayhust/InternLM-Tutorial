@@ -1,10 +1,10 @@
 # 第 2 节：轻松玩转书生·浦语大模型趣味 Demo 作业
 
 ## 课程资料
-课程文档链接：https://github.com/InternLM/tutorial/blob/main/helloworld/hello_world.md
-课程视频链接：https://www.bilibili.com/video/BV1Ci4y1z72H
-作业提交地址：https://github.com/InternLM/tutorial/discussions/227
-笔记提交地址：https://github.com/InternLM/tutorial/discussions/222
+- 课程文档链接：https://github.com/InternLM/tutorial/blob/main/helloworld/hello_world.md
+- 课程视频链接：https://www.bilibili.com/video/BV1Ci4y1z72H
+- 作业提交地址：https://github.com/InternLM/tutorial/discussions/227
+- 笔记提交地址：https://github.com/InternLM/tutorial/discussions/222
 
 ## 课程作业
 - 基础作业：

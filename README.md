@@ -3,6 +3,7 @@
 ## 项目链接
 - 项目git地址：https://github.com/internLM/tutorial
 - 作业提交地址：https://github.com/InternLM/tutorial/discussions
+- 个人git项目地址：https://github.com/jayjayhust/InternLM-Tutorial/tree/main
 
 ## 环境准备
 - 申请测试机：https://studio.intern-ai.org.cn/console/instance
