@@ -17,7 +17,12 @@
     - （2）在（1）的基础上采用W4A16量化
     - （3）在（1）的基础上开启KV Cache量化
     - （4）在（2）的基础上开启KV Cache量化
-    - （5）使用Huggingface推理 
-备注：由于进阶作业较难，完成基础作业之后就可以先提交作业了，在后续的大作业项目中使用这些技术将作为重要的加分点！
+    - （5）使用Huggingface推理(how?)
+  - 备注：由于进阶作业较难，完成基础作业之后就可以先提交作业了，在后续的大作业项目中使用这些技术将作为重要的加分点！
+
+## 课程随记
+- TurboMind（推理(加速)引擎）：https://github.com/InternLM/lmdeploy/blob/main/docs/en/inference/turbomind.md
+- Triton Inference Server（Nvida开源的机器学习推理引擎）：https://zhuanlan.zhihu.com/p/594107043
 
 ## 课程笔记
+

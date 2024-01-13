@@ -14,3 +14,5 @@
   - 将训练好后的模型应用部署到 OpenXLab 平台，参考部署文档请访问：https://aicarrier.feishu.cn/docx/MQH6dygcKolG37x0ekcc4oZhnCe
 
 ## 课程笔记
+- 4【补充】用 MS-Agent 数据集 赋予 LLM 以 Agent 能力
+  - 添加 serper 环境变量（serper.dev）：去 serper.dev 免费注册一个账号，生成自己的 api key。这个东西是用来给 lagent 去获取 google 搜索的结果的。等于是 serper.dev 帮你去访问 google，而不是从你自己本地去访问 google 了。
