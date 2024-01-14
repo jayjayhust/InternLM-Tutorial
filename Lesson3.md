@@ -18,6 +18,8 @@
       - 情感常用数据集整理：https://blog.csdn.net/weixin_43765589/article/details/132319745
       - SST 斯坦福情绪树库数据集：https://hyper.ai/datasets/15977（https://nlp.stanford.edu/sentiment/index.html）
       - 人类的悲欢虽不相通，但情感分析模型读得懂：https://hyper.ai/news/14399
-    - OpenXLab部署：https://openxlab.org.cn/apps
+    - OpenXLab部署：
+      - 应用部署：https://openxlab.org.cn/apps
+      - 服务器资源申请（GPU，用于应用部署）：https://openxlab.org.cn/docs/apps/%E5%BA%94%E7%94%A8%E5%88%9B%E5%BB%BA%E6%B5%81%E7%A8%8B.html#%E8%B5%84%E6%BA%90%E7%94%B3%E8%AF%B7%E6%B5%81%E7%A8%8B
 
 ## 课程笔记
