@@ -9,6 +9,7 @@
 - 申请测试机：https://studio.intern-ai.org.cn/console/instance
 - 本地ssh连接测试机：https://aicarrier.feishu.cn/wiki/VLS7w5I22iQWmTk0ExpczIKcnpf
 - 在开发机内部署服务(Gradio etc.)：https://aicarrier.feishu.cn/wiki/RkBWwdOfQiuLJHkEbqhceIRjnGg
+- 应用部署（OpenXLab）：https://openxlab.org.cn/docs/apps/%E5%BA%94%E7%94%A8%E5%88%9B%E5%BB%BA%E6%B5%81%E7%A8%8B.html#%E8%B5%84%E6%BA%90%E7%94%B3%E8%AF%B7%E6%B5%81%E7%A8%8B
 
 ## 课程作业及Q&A
 - 学习手册：https://cguue83gpz.feishu.cn/docx/NioWd8jcbocvzOxceX3cISSmn0d
