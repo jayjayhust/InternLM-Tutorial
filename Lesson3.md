@@ -13,13 +13,13 @@
 - 进阶作业：
   - 选择一个垂直领域，收集该领域的专业资料构建专业知识库，并搭建专业问答助手，并在 OpenXLab 上成功部署（截图，并提供应用地址）
     - 心理健康数据集：
+      - PsyQA（一个中文心理健康问答数据集，完整数据集需申请）：https://github.com/thu-coai/PsyQA
       - 心理数据集1(172条问答数据，英文)：https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset
       - 心理数据集2(Collection of 33 Psychology Related Datasets)：https://www.kaggle.com/discussions/general/304994
       - 情感常用数据集整理：https://blog.csdn.net/weixin_43765589/article/details/132319745
       - SST 斯坦福情绪树库数据集：https://hyper.ai/datasets/15977（https://nlp.stanford.edu/sentiment/index.html）
       - 中文微博情感分析数据集（NLPCC2014）：https://hyper.ai/datasets/14390
       - ExpW 表情识别数据集：https://hyper.ai/datasets/17382
-      - PsyQA（一个中文心理健康问答数据集）：https://github.com/thu-coai/PsyQA
     - 参考文献：
       - 近期大模型动态：LLaMA-2-7B-32K的训练数据组织情况及面向儿童心理健康领域的微调模型推介：https://mp.weixin.qq.com/s/2_T0VKB_80UmZvW9VqrizQ
       - Falcon-7B大型语言模型在心理健康对话数据集上使用QLoRA进行微调：https://mp.weixin.qq.com/s/Pp1ra5zKn4CEQmrKOkBcjA

@@ -14,7 +14,7 @@ def get_files(dir_path):
     for filepath, dirnames, filenames in os.walk(dir_path):
         # os.walk 函数将递归遍历指定文件夹
         for filename in filenames:
-            # 通过后缀名判断文件类型是否满足要求
+            # 通过后缀名判断文件类型是否满足要求(md文件或txt文件)
             if filename.endswith(".md"):
                 # 如果满足要求，将其绝对路径加入到结果列表
                 file_list.append(os.path.join(filepath, filename))
