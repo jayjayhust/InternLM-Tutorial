@@ -13,6 +13,7 @@ with open(file_path, "r", encoding='utf-8') as f:
     print(len(data_json))
 
     file_after_clean_txt = []
+    pure_text = ""
     for record in data_json:
         txt_record = {}
 
@@ -21,6 +22,7 @@ with open(file_path, "r", encoding='utf-8') as f:
         print('*' * 100)
         print(record['question'])  # 打印question字段
         txt_record['问题'] = record['question']
+        pure_text = pure_text + '问题:' + record['question']
         print('*' * 100)
         print(record['answers'])
         if len(record['answers']) > 1:  # 多个回答
@@ -30,6 +32,7 @@ with open(file_path, "r", encoding='utf-8') as f:
                 print(answer['answer_text'])  # 打印answer字段
                 if i == 0:
                     txt_record['答案'] = answer['answer_text']
+                    pure_text = pure_text + "\n" + '回答:' + answer['answer_text'] + "\n\n"
                 # 删除多余字段
                 if answer.get("has_label") is not None:
                     del answer["has_label"]
@@ -41,6 +44,7 @@ with open(file_path, "r", encoding='utf-8') as f:
             print('*' * 100)
             print(answer['answer_text'])  # 打印answer字段
             txt_record['答案'] = answer['answer_text']
+            pure_text = pure_text + "\n" + '回答:' + answer['answer_text'] + "\n\n"
             # 删除多余字段
             if answer.get("has_label") is not None:
                 del answer["has_label"]
@@ -60,7 +64,8 @@ with open(file_path, "r", encoding='utf-8') as f:
         f.close()
     
     with open(file_after_clean_txt_path, 'w', encoding='utf-8') as f: # ‘w’表示写入文件，文件不存在则创建，存在则覆盖
-        json.dump(file_after_clean_txt, f, ensure_ascii=False, indent=4)
+        # json.dump(file_after_clean_txt, f, ensure_ascii=False, indent=4)
+        f.write(pure_text)
         print("写入TXT文件完成...")
         f.close()
 
