@@ -82,7 +82,12 @@ with block as demo:
             # 创建一个聊天机器人对象
             chatbot = gr.Chatbot(height=450, show_copy_button=True)
             # 创建一个文本框组件，用于输入 prompt。
-            msg = gr.Textbox(label="Prompt/问题")  # 为什么有的时候情绪会突然低落什么也不想做？
+            # Q: 你是谁？
+            # Q: 为什么有的时候情绪会突然低落什么也不想做？
+            # Q: 忍受了不少委屈，导致现在很敏感，易愤怒该如何调整？
+            # Q: 什么是InternLM？
+            # Q：去北京有哪些好玩的地方呢？
+            msg = gr.Textbox(label="Prompt/问题")
 
             with gr.Row():
                 # 创建提交按钮。

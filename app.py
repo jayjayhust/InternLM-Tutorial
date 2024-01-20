@@ -6,10 +6,11 @@
 # 4.应用默认在 7860 端口启动，请不要占用或改写个人应用的启动端口
 
 
+
 from langchain.vectorstores import Chroma
 from langchain.embeddings.huggingface import HuggingFaceEmbeddings
 import os
-from L3_LLM import InternLM_LLM
+from L3_homework_LLM import InternLM_LLM
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 
@@ -37,10 +38,13 @@ def load_chain():
     问题: {question}
     有用的回答:"""
 
-    QA_CHAIN_PROMPT = PromptTemplate(input_variables=["context","question"],template=template)
+    QA_CHAIN_PROMPT = PromptTemplate(input_variables=["context", "question"], template=template)
 
     # 运行 chain
-    qa_chain = RetrievalQA.from_chain_type(llm,retriever=vectordb.as_retriever(),return_source_documents=True,chain_type_kwargs={"prompt":QA_CHAIN_PROMPT})
+    qa_chain = RetrievalQA.from_chain_type(llm, 
+                                           retriever=vectordb.as_retriever(),  # 设置召回器为 vectordb
+                                           return_source_documents=True, 
+                                           chain_type_kwargs={"prompt":QA_CHAIN_PROMPT})
     
     return qa_chain
 
@@ -60,8 +64,7 @@ class Model_center():
         if question == None or len(question) < 1:
             return "", chat_history
         try:
-            chat_history.append(
-                (question, self.chain({"query": question})["result"]))
+            chat_history.append((question, self.chain({"query": question})["result"]))
             # 将问答结果直接附加到问答历史中，Gradio 会将其展示出来
             return "", chat_history
         except Exception as e:
@@ -87,6 +90,11 @@ with block as demo:
             # 创建一个聊天机器人对象
             chatbot = gr.Chatbot(height=450, show_copy_button=True)
             # 创建一个文本框组件，用于输入 prompt。
+            # Q: 你是谁？
+            # Q: 为什么有的时候情绪会突然低落什么也不想做？
+            # Q: 忍受了不少委屈，导致现在很敏感，易愤怒该如何调整？
+            # Q: 什么是InternLM？
+            # Q：去北京有哪些好玩的地方呢？
             msg = gr.Textbox(label="Prompt/问题")
 
             with gr.Row():
@@ -98,8 +106,9 @@ with block as demo:
                     components=[chatbot], value="Clear console")
                 
         # 设置按钮的点击事件。当点击时，调用上面定义的 qa_chain_self_answer 函数，并传入用户的消息和聊天历史记录，然后更新文本框和聊天机器人组件。
-        db_wo_his_btn.click(model_center.qa_chain_self_answer, inputs=[
-                            msg, chatbot], outputs=[msg, chatbot])
+        db_wo_his_btn.click(model_center.qa_chain_self_answer, 
+                            inputs=[msg, chatbot], 
+                            outputs=[msg, chatbot])
 
     gr.Markdown("""提醒：<br>
     1. 初始化数据库时间可能较长，请耐心等待。

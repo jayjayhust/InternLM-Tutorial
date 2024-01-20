@@ -30,5 +30,10 @@
     - OpenXLab部署：
       - 应用部署：https://openxlab.org.cn/apps
       - 服务器资源申请（GPU，用于应用部署）：https://openxlab.org.cn/docs/apps/%E5%BA%94%E7%94%A8%E5%88%9B%E5%BB%BA%E6%B5%81%E7%A8%8B.html#%E8%B5%84%E6%BA%90%E7%94%B3%E8%AF%B7%E6%B5%81%E7%A8%8B
+      - 注意事项：
+        - 1.应用默认的启动文件为关联代码仓库根目录下的 app.py 文件 app.py 示例
+        - 2.配置应用所需的运行环境，如有 Python 依赖项（pip 安装）可写入 requirements.txt 中，Debian 依赖项（apt-get 安装）可写入 packages.txt 中，并存放至代码仓库的根目录下
+        - 3.如需提高应用中模型文件下载速度，建议尝试 模型托管
+        - 4.应用默认在 7860 端口启动，请不要占用或改写个人应用的启动端口
 
 ## 课程笔记
