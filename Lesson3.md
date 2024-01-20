@@ -35,5 +35,11 @@
         - 2.配置应用所需的运行环境，如有 Python 依赖项（pip 安装）可写入 requirements.txt 中，Debian 依赖项（apt-get 安装）可写入 packages.txt 中，并存放至代码仓库的根目录下
         - 3.如需提高应用中模型文件下载速度，建议尝试 模型托管
         - 4.应用默认在 7860 端口启动，请不要占用或改写个人应用的启动端口
+      - 部署思路：
+        - 先申请开通应用部署服务器
+        - 再进入应用部署服务器，使用关联的github中的脚本，下载模型到本地（比如L3_sentence-transformer_download.py等）
+        - 安装pip依赖包（pip install -r requirements.txt）
+        - 加载向量数据库并持久化
+        - 最后，在本地运行app.py文件，即可部署应用
 
 ## 课程笔记
