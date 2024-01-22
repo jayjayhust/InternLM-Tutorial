@@ -53,3 +53,26 @@
     - 下载 Adapter
     - 添加 serper 环境变量（https://serper.dev/login，区别于google的serpapi：https://serpapi.com/）：去 serper.dev 免费注册一个账号，生成自己的 api key。这个东西是用来给 lagent 去获取 google 搜索的结果的。等于是 serper.dev 帮你去访问 google，而不是从你自己本地去访问 google 了。
     - 报错处理
+- 5 注意事项
+ - 本教程使用 xtuner 0.1.9 版本 若需要跟着本教程一步一步完成，建议严格遵循本教程的步骤!
+ 
+ 若出现莫名其妙报错，请尝试更换为以下包的版本：（如果有报错再检查，没报错不用看）
+"""
+torch                         2.1.1
+transformers                  4.34.0
+transformers-stream-generator 0.0.4
+
+pip install torch==2.1.1
+pip install transformers==4.34.0
+pip install transformers-stream-generator=0.0.4
+"""
+ - CUDA 相关：（如果有报错再检查，没报错不用看）
+"""
+NVIDIA-SMI 535.54.03              
+Driver Version: 535.54.03    
+CUDA Version: 12.2
+
+nvidia-cuda-cupti-cu12        12.1.105
+nvidia-cuda-nvrtc-cu12        12.1.105
+nvidia-cuda-runtime-cu12      12.1.105
+"""
