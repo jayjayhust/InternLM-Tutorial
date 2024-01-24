@@ -4,7 +4,7 @@
 - 课程文档链接：https://github.com/InternLM/tutorial/blob/main/lmdeploy/lmdeploy.md
 - 课程视频链接：https://www.bilibili.com/video/BV1iW4y1A77P
 - 作业提交地址：https://github.com/InternLM/tutorial/discussions/230 (https://zhuanlan.zhihu.com/p/679618970)
-- 笔记提交地址：https://github.com/InternLM/tutorial/discussions/225
+- 笔记提交地址：https://github.com/InternLM/tutorial/discussions/225 (https://github.com/jayjayhust/InternLM-Tutorial/blob/main/Lesson5.md)
 
 ## 课程作业
 - 基础作业：
