@@ -25,6 +25,7 @@
     python tools/list_configs.py internlm2 ceval
     ```
     结果如下：
+    ```
     +-----------------------+-----------------------------------------------------+
     | Model                 | Config Path                                         |
     |-----------------------+-----------------------------------------------------|
@@ -45,6 +46,7 @@
     | ceval_ppl_93e5ce           | configs/datasets/ceval/ceval_ppl_93e5ce.py           |
     | ceval_zero_shot_gen_bd40ef | configs/datasets/ceval/ceval_zero_shot_gen_bd40ef.py |
     +----------------------------+------------------------------------------------------+
+    ```
     (先下载模型到本地：/root/model/Shanghai_AI_Laboratory/internlm2-chat-7b)
     ```
     python run.py --datasets ceval_gen --hf-path /root/model/Shanghai_AI_Laboratory/internlm2-chat-7b/ --tokenizer-path /root/model/Shanghai_AI_Laboratory/internlm2-chat-7b/ --tokenizer-kwargs padding_side='left' truncation='left' trust_remote_code=True --model-kwargs trust_remote_code=True device_map='auto' --max-seq-len 2048 --max-out-len 16 --batch-size 4 --num-gpus 1 --debug
