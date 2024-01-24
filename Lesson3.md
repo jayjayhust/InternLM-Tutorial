@@ -4,7 +4,7 @@
 - 课程文档链接：https://github.com/InternLM/tutorial/blob/main/langchain/readme.md
 - 课程视频链接：https://www.bilibili.com/video/BV1sT4y1p71V/
 - 作业提交地址：https://github.com/InternLM/tutorial/discussions/228 (https://zhuanlan.zhihu.com/p/678561753)
-- 笔记提交地址：https://github.com/InternLM/tutorial/discussions/223
+- 笔记提交地址：https://github.com/InternLM/tutorial/discussions/223 (https://github.com/jayjayhust/InternLM-Tutorial/blob/main/Lesson3.md)
 
 ## 课程作业
 - 提交方式：在各个班级对应的 GitHub Discussion 帖子中进行提交。
