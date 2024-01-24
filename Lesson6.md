@@ -9,9 +9,9 @@
 ## 课程作业
 - 基础作业：
   - 使用 OpenCompass 评测 InternLM2-Chat-7B 模型在 C-Eval 数据集上的性能
-    - 模型下载（modalscope）
-```
-```
+    - 模型下载（modelscope）
+    - opencompass下载（开发机上下载不了最新的opencompass，然后gitee上的opencompass不是最新的，只能自己镜像一个github的到gitee）：https://gitee.com/hunan_ai_league_jayhust/opencompass
+    - 数据集下载：https://github.com/open-compass/opencompass?tab=readme-ov-file#-data-preparation
 - 进阶作业（可选做）
   - 使用 OpenCompass 评测 InternLM2-Chat-7B 模型使用 LMDeploy 0.2.0 部署后在 C-Eval 数据集上的性能
   - 备注：由于进阶作业较难，完成基础作业之后就可以先提交作业了，在后续的大作业项目中使用这些技术将作为重要的加分点！
