@@ -10,6 +10,14 @@
 - 基础作业：
   - 使用 OpenCompass 评测 InternLM2-Chat-7B 模型在 C-Eval 数据集上的性能
     - 模型下载（modelscope）：https://modelscope.cn/models/Shanghai_AI_Laboratory/internlm2-chat-7b/summary
+    ```
+    import torch
+    from modelscope import snapshot_download, AutoModel, AutoTokenizer
+    import os
+
+    # model_dir = snapshot_download('Shanghai_AI_Laboratory/internlm2-chat-7b', cache_dir='/root/model', revision='v1.0.3')
+    model_dir = snapshot_download('Shanghai_AI_Laboratory/internlm2-chat-7b', cache_dir='/root/model')
+    ```
     - opencompass下载（开发机上下载不了最新的opencompass，然后gitee上的opencompass不是最新的，只能自己镜像一个github的到gitee）：https://gitee.com/hunan_ai_league_jayhust/opencompass
     ```
     git clone https://gitee.com/hunan_ai_league_jayhust/opencompass
