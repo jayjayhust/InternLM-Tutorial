@@ -13,6 +13,7 @@
   - 心理大模型：一个治愈的心理大模型
     - 心理健康数据集：
       - PsyQA（一个中文心理健康问答数据集，完整数据集需申请）：https://github.com/thu-coai/PsyQA
+      - 中文心理健康支持对话数据集(SmileChat)与大模型(MeChat)：https://github.com/qiuhuachuan/smile
       - 心理数据集1(172条问答数据，英文)：https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset
       - 心理数据集2(Collection of 33 Psychology Related Datasets)：https://www.kaggle.com/discussions/general/304994
       - 情感常用数据集整理：https://blog.csdn.net/weixin_43765589/article/details/132319745
